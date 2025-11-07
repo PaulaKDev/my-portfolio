@@ -1,0 +1,63 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Colores de tu web paulak.es */
+  --color-primary: #a67b5b; /* Tu color principal (más oscuro) */
+  --color-secondary: #bbab8c; /* Color secundario */
+  --color-accent: #ded0b6; /* Color de acento (más claro) */
+  --color-background: #faeed1; /* Color de fondo claro */
+  --color-text-dark: #333333; /* Texto oscuro */
+  --color-text-light: #ffffff; /* Texto claro */
+
+  /* Fuentes */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Otros */
+  --spacing-unit: 1rem;
+  --border-radius-soft: 8px;
+  --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background); /* Fondo general de la web */
+  color: var(--color-text-dark); /* Color de texto por defecto */
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary); /* Enlaces con tu color principal */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-top: 0;
+  margin-bottom: var(--spacing-unit);
+}
+
+/* Estilos para el contenedor principal de la app */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+  text-align: center;
+}
