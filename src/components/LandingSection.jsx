@@ -1,9 +1,9 @@
 import React from 'react';
 import Imagen_perfil from '../images/Imagen_perfil.png';
 
-const greeting = 'Hello, I am Paula!'; // Personalizado para ti
-const bio1 = 'A passionate Frontend Developer';
-const bio2 = 'crafting delightful user experiences'; // Biografía un poco más descriptiva
+const greeting = 'Hola, soy Paula!'; // Personalizado
+const bio1 = 'Soy Desarrolladora Front-End';
+const bio2 = 'Y diseñadora UX/UI'; // Biografía un poco más descriptiva
 
 const LandingSection = () => {
   return (
@@ -39,7 +39,7 @@ const LandingSection = () => {
         marginBottom: '0.5rem',
         fontFamily: 'var(--font-body)', // Fuente del cuerpo para el saludo
         fontWeight: 'normal',
-        color: 'var(--color-primary)', // Saludo con tu color principal
+        color: 'var(--color-primary)', // Saludo con color principal
       }}>{greeting}</h2>
       <h1 style={{
         fontSize: '3.5rem', // Tamaño de título más prominente
@@ -47,13 +47,12 @@ const LandingSection = () => {
         marginBottom: 'calc(var(--spacing-unit) * 2)',
         fontFamily: 'var(--font-heading)', // Fuente de encabezado para el rol
         lineHeight: '1.2',
-        maxWidth: '800px',
+        maxWidth: '900px',
       }}>
         {bio1}
         <br />
         {bio2}
       </h1>
-      {/* Podrías añadir un pequeño botón "View My Work" aquí */}
     </section>
   );
 };
