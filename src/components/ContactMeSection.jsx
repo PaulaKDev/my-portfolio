@@ -268,7 +268,7 @@ const ContactMeSection = () => {
               alignSelf: 'flex-start', // Alinea el botón a la izquierda
             }}
           >
-            {isLoading ? 'Submitting...' : 'Submit'}
+            {isLoading ? 'Enviando...' : 'Enviar'}
           </button>
         </form>
       </div>
