@@ -5,19 +5,19 @@ const projects = [
   {
     title: 'Proyectos React',
     description:
-      'Handy tool to display stats about the launches taking place in the SpaceX program',
+      'Desarrollo interfaces web rápidas y accesibles con JavaScript y React, aplicando buenas prácticas de usabilidad y diseño responsivo.',
     imageSrc: 'https://via.placeholder.com/400x220/A67B5B/FFFFFF?text=React+Space', // Imágenes con tu color principal
   },
   {
     title: 'Proyectos UX/UI',
     description:
-      'A daily dose of jokes on your screen, powered by React and a third-party API',
+      'Diseño interfaces accesibles, intuitivas y atractivas con Figma y Adobe XD, aplicando principios de usabilidad y diseño centrado en el usuario.',
     imageSrc: 'https://via.placeholder.com/400x220/BBAB8C/000000?text=React+Jokes', // Imágenes con tus colores
   },
   {
     title: 'Proyectos Wordpress',
     description:
-      'A simple React photo gallery application fetching images from Unsplash API',
+      'Diseño y desarrollo sitios web funcionales y optimizados en WordPress, aplicando buenas prácticas de usabilidad y diseño responsivo.',
     imageSrc: 'https://via.placeholder.com/400x220/DED0B6/000000?text=Photo+Gallery',
   },
 ];
