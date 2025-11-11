@@ -26,7 +26,12 @@ const Card = ({ title, description, imageSrc }) => {
           borderBottom: '1px solid var(--color-accent)', // Pequeña línea divisoria
         }}
       />
-      <div style={{ padding: 'calc(var(--spacing-unit) * 1.5)', display: 'flex', flexDirection: 'column', gap: '0.75rem', textAlign: 'left' }}>
+      <div style={{
+        padding: 'calc(var(--spacing-unit) * 1.5)',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.75rem',
+        textAlign: 'left' }}>
         <h3 style={{
           fontSize: '1.6rem',
           fontWeight: 'bold',

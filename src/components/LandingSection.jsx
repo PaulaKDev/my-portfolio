@@ -1,4 +1,5 @@
 import React from 'react';
+import Imagen_perfil from '../images/Imagen_perfil.png';
 
 const greeting = 'Hello, I am Paula!'; // Personalizado para ti
 const bio1 = 'A passionate Frontend Developer';
@@ -21,7 +22,7 @@ const LandingSection = () => {
       }}
     >
       <img
-        src="https://i.pravatar.cc/150?img=7" // Puedes cambiar esto por tu propia imagen de avatar
+        src={Imagen_perfil}
         alt="Avatar de Paula"
         style={{
           borderRadius: '50%',
