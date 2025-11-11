@@ -12,19 +12,19 @@ const ContactMeSection = () => {
     initialValues: {
       firstName: '',
       email: '',
-      type: 'hireMe',
+      type: 'Hire me',
       comment: '',
     },
     onSubmit: async (values) => {
       await submit('https://example.com/api/contact', values);
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required('Required'),
-      email: Yup.string().email('Invalid email address').required('Required'),
+      firstName: Yup.string().required('Obligatorio'),
+      email: Yup.string().email('Invalid email address').required('Obligatorio'),
       type: Yup.string().optional(),
       comment: Yup.string()
-        .min(25, 'Must be at least 25 characters')
-        .required('Required'),
+        .min(25, 'Debe tener al menos 25 caracteres')
+        .required('Obligatorio'),
     }),
   });
 
@@ -91,7 +91,7 @@ const ContactMeSection = () => {
             {/* NAME - Alineado a la izquierda (width: 50%) */}
             <div style={{ flex: '1 1 48%', minWidth: '250px' }}> {/* Ajuste para responsividad */}
               <label
-                htmlFor="firstName"
+                htmlFor="Nombre"
                 style={{
                   display: 'block',
                   marginBottom: '0.5rem',
@@ -100,7 +100,7 @@ const ContactMeSection = () => {
                   textAlign: 'left', // Asegura la alineación de la etiqueta
                 }}
               >
-                Name
+                Nombre
               </label>
               <input
                 id="firstName"
@@ -141,7 +141,7 @@ const ContactMeSection = () => {
                   textAlign: 'left', // Asegura la alineación de la etiqueta
                 }}
               >
-                Type of enquiry
+                Tipo de solicitud
               </label>
               <select
                 id="type"
@@ -160,9 +160,9 @@ const ContactMeSection = () => {
                   boxSizing: 'border-box', // Importante para que padding y border no excedan el 100%
                 }}
               >
-                <option value="hireMe">Hire Me</option>
-                <option value="openSource">Open Source</option>
-                <option value="other">Other</option>
+                <option value="hireMe">Contrátame</option>
+                <option value="openSource">Código abierto</option>
+                <option value="other">Otros</option>
               </select>
             </div>
           </div>
@@ -180,7 +180,7 @@ const ContactMeSection = () => {
                 textAlign: 'left', // Asegura la alineación de la etiqueta
               }}
             >
-              Email Address
+              Dirección de Email
             </label>
             <input
               id="email"
@@ -221,7 +221,7 @@ const ContactMeSection = () => {
                 textAlign: 'left', // Asegura la alineación de la etiqueta
               }}
             >
-              Your message
+              Tu mensaje
             </label>
             <textarea
               id="comment"
