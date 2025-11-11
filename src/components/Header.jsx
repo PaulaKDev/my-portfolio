@@ -1,25 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faMedium, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; // Aunque no se usa en el header, lo mantengo por si acaso
+import { faArrowRight, faGlobe, faL } from '@fortawesome/free-solid-svg-icons'; // Aunque no se usa en el header, lo mantengo por si acaso
 
 const socials = [
   {
     icon: faGithub,
-    url: 'https://github.com',
+    url: 'https://github.com/PaulaKDev',
   },
   {
     icon: faLinkedin,
-    url: 'https://www.linkedin.com',
+    url: 'https://linkedin.com/in/paula-miraz-flores',
   },
   {
-    icon: faMedium,
-    url: 'https://medium.com',
-  },
-  {
-    icon: faStackOverflow,
-    url: 'https://stackoverflow.com',
-  },
+    icon: faGlobe,
+    url: 'https://paulak.es',
+  }
 ];
 
 const Header = () => {
@@ -65,7 +61,7 @@ const Header = () => {
         top: 0,
         left: 0,
         right: 0,
-        backgroundColor: 'var(--color-primary)', // Usar tu color principal
+        backgroundColor: 'var(--color-primary)', // Usar color principal
         color: 'var(--color-text-light)', // Texto claro
         padding: '1rem 0',
         zIndex: 1000,
