@@ -52,11 +52,11 @@ const Card = ({ title, description, imageSrc }) => {
             gap: '0.5rem',
             fontWeight: '600',
             fontFamily: 'var(--font-heading)',
-            color: 'var(--color-secondary)', // "See more" con color secundario
+            color: 'var(--color-secondary)', // "Ver más" con color secundario
             marginTop: '0.5rem',
           }}
         >
-          See more <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          Ver más <FontAwesomeIcon icon={faArrowRight} size="1x" />
         </span>
       </div>
     </div>

@@ -1,24 +1,27 @@
 import React from 'react';
 import Card from './Card';
+import Reacty from '../images/Reacty.jpg';
+import UXUI from '../images/UXUI.jpg';
+import Wordpress from '../images/Wordpress.jpg';
 
 const projects = [
   {
     title: 'Proyectos React',
     description:
       'Desarrollo interfaces web rápidas y accesibles con JavaScript y React, aplicando buenas prácticas de usabilidad y diseño responsivo.',
-    imageSrc: 'https://via.placeholder.com/400x220/A67B5B/FFFFFF?text=React+Space', // Imágenes con tu color principal
+    imageSrc: Reacty, // Imágenes con tus colores
   },
   {
     title: 'Proyectos UX/UI',
     description:
       'Diseño interfaces accesibles, intuitivas y atractivas con Figma y Adobe XD, aplicando principios de usabilidad y diseño centrado en el usuario.',
-    imageSrc: 'https://via.placeholder.com/400x220/BBAB8C/000000?text=React+Jokes', // Imágenes con tus colores
+    imageSrc: UXUI, // Imágenes con tus colores
   },
   {
     title: 'Proyectos Wordpress',
     description:
       'Diseño y desarrollo sitios web funcionales y optimizados en WordPress, aplicando buenas prácticas de usabilidad y diseño responsivo.',
-    imageSrc: 'https://via.placeholder.com/400x220/DED0B6/000000?text=Photo+Gallery',
+    imageSrc: Wordpress, // Imágenes con tus colores
   },
 ];
 
@@ -43,7 +46,7 @@ const ProjectsSection = () => {
         fontFamily: 'var(--font-heading)',
         fontWeight: 'bold',
         color: 'var(--color-primary)', // Título con color principal
-      }}>Featured Projects</h2>
+      }}>Proyectos Destacados</h2>
       <div
         style={{
           display: 'grid',
