@@ -94,12 +94,12 @@ const Header = () => {
           <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', gap: 'calc(var(--spacing-unit) * 2)' }}>
             <li>
               <a href="#projects-section" onClick={handleClick('projects')} style={{ color: 'var(--color-text-light)', textDecoration: 'none', fontSize: '1.1rem', fontFamily: 'var(--font-heading)', fontWeight: '600' }}>
-                Projects
+                Proyectos
               </a>
             </li>
             <li>
               <a href="#contactme-section" onClick={handleClick('contactme')} style={{ color: 'var(--color-text-light)', textDecoration: 'none', fontSize: '1.1rem', fontFamily: 'var(--font-heading)', fontWeight: '600' }}>
-                Contact Me
+                Contáctame
               </a>
             </li>
           </ul>
