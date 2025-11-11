@@ -57,8 +57,8 @@ const ContactMeSection = () => {
         fontFamily: 'var(--font-heading)',
         fontWeight: 'bold',
         color: 'var(--color-text-light)',
-        textAlign: 'center', // Centra el título "Contact Me"
-      }}>Contact Me</h2>
+        textAlign: 'center', // Centra el título "Contáctame"
+      }}>Contáctame</h2>
 
       <div
         style={{
