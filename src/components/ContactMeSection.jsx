@@ -44,10 +44,10 @@ const ContactMeSection = () => {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
+        alignItems: 'center', // Centra horizontalmente el div del formulario
         justifyContent: 'center',
         padding: 'calc(var(--spacing-unit) * 4) var(--spacing-unit)',
-        backgroundColor: 'var(--color-secondary)', // Fondo secundario
+        backgroundColor: 'var(--color-secondary)',
         color: 'var(--color-text-dark)',
       }}
     >
@@ -56,38 +56,130 @@ const ContactMeSection = () => {
         marginBottom: 'calc(var(--spacing-unit) * 3)',
         fontFamily: 'var(--font-heading)',
         fontWeight: 'bold',
-        color: 'var(--color-text-light)', // Título claro sobre fondo oscuro
+        color: 'var(--color-text-light)',
+        textAlign: 'center', // Centra el título "Contact Me"
       }}>Contact Me</h2>
-      <div style={{ maxWidth: '700px', width: '100%', backgroundColor: 'var(--color-text-light)', borderRadius: 'var(--border-radius-soft)', padding: 'calc(var(--spacing-unit) * 2)', boxShadow: 'var(--box-shadow-light)' }}>
-        <form onSubmit={formik.handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          <div>
-            <label htmlFor="firstName" style={{ display: 'block', marginBottom: '0.5rem', fontFamily: 'var(--font-heading)', fontWeight: '600' }}>
-              Name
-            </label>
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              {...formik.getFieldProps('firstName')}
-              style={{
-                width: '100%',
-                padding: '0.85rem',
-                borderRadius: 'var(--border-radius-soft)',
-                border: `1px solid ${formik.touched.firstName && formik.errors.firstName ? 'red' : 'var(--color-accent)'}`,
-                backgroundColor: '#fff',
-                color: 'var(--color-text-dark)',
-                fontFamily: 'var(--font-body)',
-              }}
-            />
-            {formik.touched.firstName && formik.errors.firstName ? (
-              <p style={{ color: 'red', fontSize: '0.85rem', marginTop: '0.3rem' }}>
-                {formik.errors.firstName}
-              </p>
-            ) : null}
-          </div>
 
+      <div
+        style={{
+          maxWidth: '700px',
+          width: '100%',
+          backgroundColor: 'var(--color-text-light)',
+          borderRadius: 'var(--border-radius-soft)',
+          padding: 'calc(var(--spacing-unit) * 2)',
+          boxShadow: 'var(--box-shadow-light)',
+        }}
+      >
+        <form
+          onSubmit={formik.handleSubmit}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem',
+            width: '100%',
+          }}
+        >
+          {/* NUEVO CONTENEDOR FLEX PARA NAME Y TYPE OF ENQUIRY */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between', // Empuja Name a la izquierda y Type a la derecha
+              gap: '1.5rem', // Espacio entre los dos campos
+              flexWrap: 'wrap', // Permite que los elementos se envuelvan en pantallas pequeñas
+            }}
+          >
+            {/* NAME - Alineado a la izquierda (width: 50%) */}
+            <div style={{ flex: '1 1 48%', minWidth: '250px' }}> {/* Ajuste para responsividad */}
+              <label
+                htmlFor="firstName"
+                style={{
+                  display: 'block',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-heading)',
+                  fontWeight: '600',
+                  textAlign: 'left', // Asegura la alineación de la etiqueta
+                }}
+              >
+                Name
+              </label>
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                {...formik.getFieldProps('firstName')}
+                style={{
+                  width: '100%', // Ocupa el 100% de su contenedor (el div del 48%)
+                  padding: '0.85rem',
+                  borderRadius: 'var(--border-radius-soft)',
+                  border: `1px solid ${
+                    formik.touched.firstName && formik.errors.firstName
+                      ? 'red'
+                      : 'var(--color-accent)'
+                  }`,
+                  backgroundColor: '#fff',
+                  color: 'var(--color-text-dark)',
+                  fontFamily: 'var(--font-body)',
+                  boxSizing: 'border-box', // Importante para que padding y border no excedan el 100%
+                }}
+              />
+              {formik.touched.firstName && formik.errors.firstName && (
+                <p style={{ color: 'red', fontSize: '0.85rem', marginTop: '0.3rem', textAlign: 'left' }}>
+                  {formik.errors.firstName}
+                </p>
+              )}
+            </div>
+
+            {/* TYPE SELECT - Alineado a la derecha (width: 50%) */}
+            <div style={{ flex: '1 1 48%', minWidth: '250px' }}> {/* Ajuste para responsividad */}
+              <label
+                htmlFor="type"
+                style={{
+                  display: 'block',
+                  marginBottom: '0.5rem',
+                  fontFamily: 'var(--font-heading)',
+                  fontWeight: '600',
+                  textAlign: 'left', // Asegura la alineación de la etiqueta
+                }}
+              >
+                Type of enquiry
+              </label>
+              <select
+                id="type"
+                name="type"
+                {...formik.getFieldProps('type')}
+                style={{
+                  width: '100%', // Ocupa el 100% de su contenedor (el div del 48%)
+                  padding: '0.85rem',
+                  borderRadius: 'var(--border-radius-soft)',
+                  border: '1px solid var(--color-accent)',
+                  backgroundColor: '#fff',
+                  color: 'var(--color-text-dark)',
+                  fontFamily: 'var(--font-body)',
+                  minHeight: '3.2rem',
+                  display: 'block',
+                  boxSizing: 'border-box', // Importante para que padding y border no excedan el 100%
+                }}
+              >
+                <option value="hireMe">Hire Me</option>
+                <option value="openSource">Open Source</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          {/* FIN DEL CONTENEDOR FLEX COMBINADO */}
+
+          {/* EMAIL - Mantenido solo en su línea */}
           <div>
-            <label htmlFor="email" style={{ display: 'block', marginBottom: '0.5rem', fontFamily: 'var(--font-heading)', fontWeight: '600' }}>
+            <label
+              htmlFor="email"
+              style={{
+                display: 'block',
+                marginBottom: '0.5rem',
+                fontFamily: 'var(--font-heading)',
+                fontWeight: '600',
+                textAlign: 'left', // Asegura la alineación de la etiqueta
+              }}
+            >
               Email Address
             </label>
             <input
@@ -99,45 +191,36 @@ const ContactMeSection = () => {
                 width: '100%',
                 padding: '0.85rem',
                 borderRadius: 'var(--border-radius-soft)',
-                border: `1px solid ${formik.touched.email && formik.errors.email ? 'red' : 'var(--color-accent)'}`,
+                border: `1px solid ${
+                  formik.touched.email && formik.errors.email
+                    ? 'red'
+                    : 'var(--color-accent)'
+                }`,
                 backgroundColor: '#fff',
                 color: 'var(--color-text-dark)',
                 fontFamily: 'var(--font-body)',
+                boxSizing: 'border-box', // Importante
               }}
             />
-            {formik.touched.email && formik.errors.email ? (
-              <p style={{ color: 'red', fontSize: '0.85rem', marginTop: '0.3rem' }}>
+            {formik.touched.email && formik.errors.email && (
+              <p style={{ color: 'red', fontSize: '0.85rem', marginTop: '0.3rem', textAlign: 'left' }}>
                 {formik.errors.email}
               </p>
-            ) : null}
+            )}
           </div>
 
+          {/* MESSAGE - (se mantiene igual) */}
           <div>
-            <label htmlFor="type" style={{ display: 'block', marginBottom: '0.5rem', fontFamily: 'var(--font-heading)', fontWeight: '600' }}>
-              Type of enquiry
-            </label>
-            <select
-              id="type"
-              name="type"
-              {...formik.getFieldProps('type')}
+            <label
+              htmlFor="comment"
               style={{
-                width: '100%',
-                padding: '0.85rem',
-                borderRadius: 'var(--border-radius-soft)',
-                border: '1px solid var(--color-accent)',
-                backgroundColor: '#fff',
-                color: 'var(--color-text-dark)',
-                fontFamily: 'var(--font-body)',
+                display: 'block',
+                marginBottom: '0.5rem',
+                fontFamily: 'var(--font-heading)',
+                fontWeight: '600',
+                textAlign: 'left', // Asegura la alineación de la etiqueta
               }}
             >
-              <option value="hireMe">Hire Me</option>
-              <option value="openSource">Open Source</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="comment" style={{ display: 'block', marginBottom: '0.5rem', fontFamily: 'var(--font-heading)', fontWeight: '600' }}>
               Your message
             </label>
             <textarea
@@ -149,18 +232,23 @@ const ContactMeSection = () => {
                 width: '100%',
                 padding: '0.85rem',
                 borderRadius: 'var(--border-radius-soft)',
-                border: `1px solid ${formik.touched.comment && formik.errors.comment ? 'red' : 'var(--color-accent)'}`,
+                border: `1px solid ${
+                  formik.touched.comment && formik.errors.comment
+                    ? 'red'
+                    : 'var(--color-accent)'
+                }`,
                 backgroundColor: '#fff',
                 color: 'var(--color-text-dark)',
                 resize: 'vertical',
                 fontFamily: 'var(--font-body)',
+                boxSizing: 'border-box', // Importante
               }}
             ></textarea>
-            {formik.touched.comment && formik.errors.comment ? (
-              <p style={{ color: 'red', fontSize: '0.85rem', marginTop: '0.3rem' }}>
+            {formik.touched.comment && formik.errors.comment && (
+              <p style={{ color: 'red', fontSize: '0.85rem', marginTop: '0.3rem', textAlign: 'left' }}>
                 {formik.errors.comment}
               </p>
-            ) : null}
+            )}
           </div>
 
           <button
@@ -168,7 +256,7 @@ const ContactMeSection = () => {
             disabled={isLoading}
             style={{
               padding: '1rem 1.75rem',
-              backgroundColor: 'var(--color-primary)', // Botón con tu color principal
+              backgroundColor: 'var(--color-primary)',
               color: 'var(--color-text-light)',
               border: 'none',
               borderRadius: 'var(--border-radius-soft)',
@@ -177,7 +265,7 @@ const ContactMeSection = () => {
               fontWeight: '700',
               fontFamily: 'var(--font-heading)',
               transition: 'background-color 0.2s',
-              alignSelf: 'flex-start', // Alinear a la izquierda como en tu web
+              alignSelf: 'flex-start', // Alinea el botón a la izquierda
             }}
           >
             {isLoading ? 'Submitting...' : 'Submit'}
