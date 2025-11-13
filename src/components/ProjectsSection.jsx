@@ -65,6 +65,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.imageSrc}
+            link={project.link} // Link interno a la página correspondiente
           />
         ))}
       </div>

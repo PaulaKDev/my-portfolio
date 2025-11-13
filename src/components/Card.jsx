@@ -49,7 +49,7 @@ const Card = ({ title, description, imageSrc,link }) => {
           color: 'var(--color-text-dark)',
         }}>{description}</p>
 
-<p
+        <p
           style={{
             fontSize: '1rem',
             margin: 0,
