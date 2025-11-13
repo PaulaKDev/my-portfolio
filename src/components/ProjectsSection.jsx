@@ -17,7 +17,7 @@ const projects = [
     description:
       'Diseño interfaces accesibles, intuitivas y atractivas con Figma y Adobe XD, aplicando principios de usabilidad y diseño centrado en el usuario.',
     imageSrc: UXUI,
-    link: '/uxui-projects' // Link interno a la página de proyectos UX/UI
+    link: 'https://paulak.es/proyectos-2/proyectos-ux' //  Enlace externo
   },
   {
     title: 'Proyectos Wordpress',
