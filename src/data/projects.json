@@ -1,0 +1,28 @@
+{
+    "react": [
+        {
+        "title": "React Portfolio",
+        "description": "A personal portfolio website built with React.js to showcase projects and skills.",
+        "images": "/images/react-portfolio.png",
+        "link": "https://gihub.com/PaulaKDev/my-portfolio"
+        }
+    ],
+
+    "uxui": [
+        {
+        "title": "UX/UI Design Case Study",
+        "description": "A comprehensive case study on improving user experience and interface design for a mobile app.",
+        "images": "/images/uxui-case-study.png",
+        "link": "https://paulak.es/proyectos-2/proyectos-ux"
+        }
+    ],
+
+    "wordpress": [
+        {
+        "title": "WordPress Blog",
+        "description": "A fully functional blog website created using WordPress, featuring custom themes and plugins.",
+        "images": "/images/wordpress-blog.png",
+        "link": "https://gihub.com/PaulaKDev/wordpress-blog"
+        }
+    ]
+}
