@@ -4,10 +4,12 @@ import Footer from './components/Footer';
 import LandingSection from './components/LandingSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactMeSection from './components/ContactMeSection';
+import Breadcrumb from './components/Breadcrumb';
 import ReactProjects from './pages/ReactProjects';
 import UXUIProjects from './pages/UXUIProjects';
 import WordPressProjects from './pages/WordPressProjects';
 import { AlertProvider } from './context/alertContext';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         {/* Contenedor principal con flexbox */}
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
           <Header />
+          <Breadcrumb /> {/*Nuevo componente */}
           {/* Main ocupa todo el espacio disponible */}
           <main style={{ flex: 1 }}>
             <Routes>
