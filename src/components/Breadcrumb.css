@@ -37,3 +37,12 @@
     padding: 0.6rem;
   }
 }
+
+.breadcrumb div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -14,6 +14,15 @@ const Breadcrumb = () => {
 
   return (
     <nav className="breadcrumb">
+        <div style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '0 var(--spacing-unit)',
+            display: 'flex',
+            alignItems: 'center',
+            padding: '0 var(--spacing-unit)',
+        }}>
+
       <Link to="/">Inicio</Link>
       {pathnames.map((name, index) => {
         const routeTo = '/' + pathnames.slice(0, index + 1).join('/');
@@ -25,6 +34,7 @@ const Breadcrumb = () => {
           </span>
         );
       })}
+      </div>
     </nav>
   );
 };
