@@ -60,23 +60,43 @@ const Card = ({ title, description, imageSrc,link }) => {
         >
           {description}
         </p>
-
-        {/*Convertimos el Span en Link*/}
-        <Link
-          to={link}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            fontWeight: '600',
-            fontFamily: 'var(--font-heading)',
-            color: 'var(--color-secondary)',
-            marginTop: '0.5rem',
-            textDecoration: 'none',
-          }}
-        >
-          Ver más <FontAwesomeIcon icon={faArrowRight} size="1x" />
-        </Link>
+        
+{/* Si es externo, usamos <a>, si es interno, usamos <Link> */}
+        {isExternal ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              fontWeight: '600',
+              fontFamily: 'var(--font-heading)',
+              color: 'var(--color-secondary)',
+              marginTop: '0.5rem',
+              textDecoration: 'none',
+            }}
+          >
+            Ver más <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          </a>
+        ) : (
+          <Link
+            to={link}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              fontWeight: '600',
+              fontFamily: 'var(--font-heading)',
+              color: 'var(--color-secondary)',
+              marginTop: '0.5rem',
+              textDecoration: 'none',
+            }}
+          >
+            Ver más <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          </Link>
+        )}
       </div>
     </div>
   );
