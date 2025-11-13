@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
-import projects from '../data/projects.json'; // Si usas JSON dinámico
+import projects from '../data/projects.json';
 
 const ReactProjects = () => {
   return (
