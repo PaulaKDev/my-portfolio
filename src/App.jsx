@@ -13,20 +13,29 @@ function App() {
   return (
     <AlertProvider>
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={
-            <>
-              <LandingSection />
-              <ProjectsSection />
-              <ContactMeSection />
-            </>
-          } />
-          <Route path="/react-projects" element={<ReactProjects />} />
-          <Route path="/ux-ui-projects" element={<UXUIProjects />} />
-          <Route path="/wordpress-projects" element={<WordPressProjects />} />
-        </Routes>
-        <Footer />
+        {/* Contenedor principal con flexbox */}
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+          <Header />
+          {/* Main ocupa todo el espacio disponible */}
+          <main style={{ flex: 1 }}>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <LandingSection />
+                    <ProjectsSection />
+                    <ContactMeSection />
+                  </>
+                }
+              />
+              <Route path="/react-projects" element={<ReactProjects />} />
+              <Route path="/ux-ui-projects" element={<UXUIProjects />} />
+              <Route path="/wordpress-projects" element={<WordPressProjects />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </Router>
     </AlertProvider>
   );
