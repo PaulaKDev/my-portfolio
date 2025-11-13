@@ -7,21 +7,21 @@ const bio2 = 'Y diseñadora UX/UI'; // Biografía un poco más descriptiva
 
 const LandingSection = () => {
   return (
-    <section
-      style={{
-        width: '100%',
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: 'var(--color-background)', // Fondo principal
-        color: 'var(--color-text-dark)',
-        textAlign: 'center',
-        padding: 'calc(var(--spacing-unit) * 4) var(--spacing-unit)',
-        marginTop: '60px', // Espacio para el header fijo
-      }}
-    >
+  <section
+    style={{
+      width: '100%',
+      height: 'calc(100vh - 60px)', // ajusta por el header
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'var(--color-background)',
+      color: 'var(--color-text-dark)',
+      textAlign: 'center',
+      padding: '2rem 1rem',
+    }}
+  >
+
       <img
         src={Imagen_perfil}
         alt="Avatar de Paula"
