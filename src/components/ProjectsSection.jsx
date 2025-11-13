@@ -33,6 +33,7 @@ const ProjectsSection = () => {
     <section
       id="projects-section"
       style={{
+        width: '100%',
         minHeight: '70vh',
         display: 'flex',
         flexDirection: 'column',

@@ -41,6 +41,7 @@ const ContactMeSection = () => {
     <section
       id="contactme-section"
       style={{
+        width: '100%',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',

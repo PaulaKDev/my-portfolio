@@ -9,6 +9,7 @@ const LandingSection = () => {
   return (
     <section
       style={{
+        width: '100%',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
