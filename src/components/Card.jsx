@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ title, description, imageSrc,link }) => {
-  const isExternal = link.startsWith('http://') // Detecta si es un enlace externo
+  const isExternal = link.startsWith('http') // Detecta si es un enlace externo
   return (
     <div
       style={{
@@ -60,7 +60,7 @@ const Card = ({ title, description, imageSrc,link }) => {
         >
           {description}
         </p>
-        
+
 {/* Si es externo, usamos <a>, si es interno, usamos <Link> */}
         {isExternal ? (
           <a
