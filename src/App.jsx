@@ -1,24 +1,33 @@
-// Sin cambios significativos aquí, solo para referencia
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import LandingSection from './components/LandingSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactMeSection from './components/ContactMeSection';
-import Footer from './components/Footer';
+import ReactProjects from './pages/ReactProjects';
+import UXUIProjects from './pages/UXUIProjects';
+import WordPressProjects from './pages/WordPressProjects';
 import { AlertProvider } from './context/alertContext';
 
 function App() {
   return (
     <AlertProvider>
-      <div style={{ scrollBehavior: 'smooth' }}>
+      <Router>
         <Header />
-        <main>
-          <LandingSection />
-          <ProjectsSection />
-          <ContactMeSection />
-        </main>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <LandingSection />
+              <ProjectsSection />
+              <ContactMeSection />
+            </>
+          } />
+          <Route path="/react-projects" element={<ReactProjects />} />
+          <Route path="/ux-ui-projects" element={<UXUIProjects />} />
+          <Route path="/wordpress-projects" element={<WordPressProjects />} />
+        </Routes>
         <Footer />
-      </div>
+      </Router>
     </AlertProvider>
   );
 }
