@@ -61,3 +61,14 @@ section {
   padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
   text-align: center;
 }
+
+/* Estilos para la cuadrícula de proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
