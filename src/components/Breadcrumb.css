@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 0;
   background-color: #f4e3c3; /* Beige claro */
   font-family: var(--font-body);
   font-size: 1rem;
@@ -38,11 +38,12 @@
   }
 }
 
+
 .breadcrumb div {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-unit);
+  width: 100%; /* ocupa todo el ancho */
+  padding-left: var(--spacing-unit); /* igual que el header */
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  justify-content: flex-start;
 }
