@@ -28,17 +28,19 @@ const reactProjects = [
 
 const ReactProjects = () => {
   return (
-    <section
-      style={{
-        minHeight: '70vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: 'calc(var(--spacing-unit) * 4) var(--spacing-unit)',
-        backgroundColor: 'var(--color-accent)',
-        color: 'var(--color-text-dark)',
-      }}
-    >
+<section
+  style={{
+    width: '100%',
+    maxWidth: '1200px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 'calc(var(--spacing-unit) * 4) var(--spacing-unit)',
+    color: 'var(--color-text-dark)',
+  }}
+>
+
       <h1
         style={{
           fontSize: '2.8rem',
