@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const Card = ({ title, description, imageSrc }) => {
+const Card = ({ title, description, imageSrc,link }) => {
   return (
     <div
       style={{
@@ -32,6 +33,7 @@ const Card = ({ title, description, imageSrc }) => {
         flexDirection: 'column',
         gap: '0.75rem',
         textAlign: 'left' }}>
+
         <h3 style={{
           fontSize: '1.6rem',
           fontWeight: 'bold',
@@ -39,25 +41,41 @@ const Card = ({ title, description, imageSrc }) => {
           fontFamily: 'var(--font-heading)',
           color: 'var(--color-primary)', // Título de la tarjeta con color principal
         }}>{title}</h3>
+
         <p style={{
           fontSize: '1rem',
           margin: 0,
           fontFamily: 'var(--font-body)',
           color: 'var(--color-text-dark)',
         }}>{description}</p>
-        <span
+
+<p
+          style={{
+            fontSize: '1rem',
+            margin: 0,
+            fontFamily: 'var(--font-body)',
+            color: 'var(--color-text-dark)',
+          }}
+        >
+          {description}
+        </p>
+
+        {/*Convertimos el Span en Link*/}
+        <Link
+          to={link}
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: '0.5rem',
             fontWeight: '600',
             fontFamily: 'var(--font-heading)',
-            color: 'var(--color-secondary)', // "Ver más" con color secundario
+            color: 'var(--color-secondary)',
             marginTop: '0.5rem',
+            textDecoration: 'none',
           }}
         >
           Ver más <FontAwesomeIcon icon={faArrowRight} size="1x" />
-        </span>
+        </Link>
       </div>
     </div>
   );

@@ -9,21 +9,21 @@ const projects = [
     title: 'Proyectos React',
     description:
       'Desarrollo interfaces web rápidas y accesibles con JavaScript y React, aplicando buenas prácticas de usabilidad y diseño responsivo.',
-    imageSrc: Reacty, 
+    imageSrc: Reacty,
     link: '/react-projects'// Link interno a la página de proyectos React
   },
   {
     title: 'Proyectos UX/UI',
     description:
       'Diseño interfaces accesibles, intuitivas y atractivas con Figma y Adobe XD, aplicando principios de usabilidad y diseño centrado en el usuario.',
-    imageSrc: UXUI, // Imágenes con tus colores
-    link: '/uxui-projects' // Link interno a la página de proyectos UX/UI 
+    imageSrc: UXUI,
+    link: '/uxui-projects' // Link interno a la página de proyectos UX/UI
   },
   {
     title: 'Proyectos Wordpress',
     description:
       'Diseño y desarrollo sitios web funcionales y optimizados en WordPress, aplicando buenas prácticas de usabilidad y diseño responsivo.',
-    imageSrc: Wordpress, // Imágenes con tus colores
+    imageSrc: Wordpress,
     link: '/wordpress-projects' // Link interno a la página de proyectos WordPress
   },
 ];
