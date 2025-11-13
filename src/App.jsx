@@ -10,16 +10,14 @@ import UXUIProjects from './pages/UXUIProjects';
 import WordPressProjects from './pages/WordPressProjects';
 import { AlertProvider } from './context/alertContext';
 
-
 function App() {
   return (
     <AlertProvider>
       <Router>
-        {/* Contenedor principal con flexbox */}
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
           <Header />
-          <Breadcrumb /> {/*Nuevo componente */}
-          {/* Main ocupa todo el espacio disponible */}
+          {/* Breadcrumb siempre visible */}
+          <Breadcrumb />
           <main style={{ flex: 1 }}>
             <Routes>
               <Route
