@@ -1,6 +1,30 @@
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
-import projects from '../data/projects.json';
+import Card from '../components/Card';
+import Reacty from '../images/Reacty.jpg';
+import UXUI from '../images/UXUI.jpg';
+import Wordpress from '../images/Wordpress.jpg';
+
+
+const reactProjects = [
+  {
+    title: 'Portfolio React',
+    description: 'Portfolio personal con React y Vite.',
+    imageSrc: Reacty,
+    link: 'https://github.com/PaulaKDev/my-portfolio'
+  },
+  {
+    title: 'App React',
+    description: 'Aplicación interactiva con React Hooks.',
+    imageSrc: UXUI,
+    link: 'https://github.com/PaulaKDev/react-app'
+  },
+  {
+    title: 'Landing React',
+    description: 'Landing page responsive con React y CSS.',
+    imageSrc: Wordpress,
+    link: 'https://github.com/PaulaKDev/react-landing'
+  }
+];
 
 const ReactProjects = () => {
   return (
@@ -35,8 +59,14 @@ const ReactProjects = () => {
           width: '100%',
         }}
       >
-        {projects.react.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+        {reactProjects.map((project, index) => (
+          <Card
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageSrc={project.imageSrc}
+            link={project.link}
+          />
         ))}
       </div>
     </section>
