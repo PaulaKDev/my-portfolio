@@ -97,17 +97,17 @@ main {
 
 .scroll-to-top {
   position: fixed;
-  bottom: 100px; /* más arriba del footer */
+  bottom: 80px; /* más arriba del footer */
   right: 60px;
   background-color: var(--color-primary); /* marrón principal */
   color: var(--color-text-light);
   border: none;
-  border-radius: 50%;
+  border-radius: 60%;
   width: 60px;
   height: 60px;
   font-size: 24px;
   cursor: pointer;
-  box-shadow: var(--box-shadow-light);
+  box-shadow: var(--box-shadow-dark);
   display: flex;
   align-items: center;
   justify-content: center;
