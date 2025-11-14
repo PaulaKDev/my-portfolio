@@ -5,6 +5,7 @@ import LandingSection from './components/LandingSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactMeSection from './components/ContactMeSection';
 import Breadcrumb from './components/Breadcrumb';
+import ScrollToTop from './components/ScrollToTop';
 import ReactProjects from './pages/ReactProjects';
 import UXUIProjects from './pages/UXUIProjects';
 import WordPressProjects from './pages/WordPressProjects';
@@ -33,6 +34,7 @@ function App() {
               <Route path="/react-projects" element={<ReactProjects />} />
               <Route path="/ux-ui-projects" element={<UXUIProjects />} />
               <Route path="/wordpress-projects" element={<WordPressProjects />} />
+              <ScrollToTop />
             </Routes>
           </main>
           <Footer />
