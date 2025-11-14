@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-import Reacty from '../images/Reacty.jpg';
+import PortfolioReact  from '../images/PortfolioReact.png';
 import UXUI from '../images/UXUI.jpg';
 import Wordpress from '../images/Wordpress.jpg';
 
@@ -9,7 +9,7 @@ const reactProjects = [
   {
     title: 'Portfolio React',
     description: 'Portfolio personal con React y Vite.',
-    imageSrc: Reacty,
+    imageSrc: PortfolioReact,
     link: 'https://github.com/PaulaKDev/my-portfolio'
   },
   {
