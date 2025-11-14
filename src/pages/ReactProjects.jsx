@@ -13,14 +13,14 @@ const reactProjects = [
     link: 'https://github.com/PaulaKDev/my-portfolio'
   },
   {
-    title: 'App React',
-    description: 'Aplicación interactiva con React Hooks.',
+    title: 'Little Lemon Restaurant',
+    description: 'Funcionalidad web de reserva de mesas con React.',
     imageSrc: UXUI,
     link: 'https://github.com/PaulaKDev/react-app'
   },
   {
-    title: 'Landing React',
-    description: 'Landing page responsive con React y CSS.',
+    title: 'ToDo List App',
+    description: 'Aplicación "ToDo" con React',
     imageSrc: Wordpress,
     link: 'https://github.com/PaulaKDev/react-landing'
   }
