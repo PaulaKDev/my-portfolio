@@ -1,16 +1,16 @@
 import React from 'react';
 import Card from '../components/Card';
-import Reacty from '../images/Reacty.jpg';
+import PortfolioWordpress from '../images/PortfolioWP.png';
 import UXUI from '../images/UXUI.jpg';
 import Wordpress from '../images/Wordpress.jpg';
 
 
 const wordpressProjects = [
   {
-    title: 'Blog WordPress',
-    description: 'Diseño y desarrollo de blog en WordPress.',
-    imageSrc: Reacty,
-    link: 'https://tusitio.com/blog'
+    title: 'Portfolio WordPress',
+    description: 'Diseño y desarrollo de Portfolio en WordPress.',
+    imageSrc: PortfolioWordpress,
+    link: 'https://paulak.es'
   },
   {
     title: 'E-commerce WordPress',

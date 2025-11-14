@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 import PortfolioReact  from '../images/PortfolioReact.png';
-import UXUI from '../images/UXUI.jpg';
+import LittleLemon from '../images/LittleLemon.png';
 import Wordpress from '../images/Wordpress.jpg';
 
 
@@ -15,7 +15,7 @@ const reactProjects = [
   {
     title: 'Little Lemon Restaurant',
     description: 'Funcionalidad web de reserva de mesas con React.',
-    imageSrc: UXUI,
+    imageSrc: LittleLemon,
     link: 'https://github.com/PaulaKDev/little-lemon'
   },
   {
