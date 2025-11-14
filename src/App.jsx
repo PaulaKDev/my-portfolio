@@ -34,8 +34,8 @@ function App() {
               <Route path="/react-projects" element={<ReactProjects />} />
               <Route path="/ux-ui-projects" element={<UXUIProjects />} />
               <Route path="/wordpress-projects" element={<WordPressProjects />} />
-              <ScrollToTop />
             </Routes>
+              <ScrollToTop />
           </main>
           <Footer />
         </div>
