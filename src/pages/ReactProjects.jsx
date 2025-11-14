@@ -16,13 +16,13 @@ const reactProjects = [
     title: 'Little Lemon Restaurant',
     description: 'Funcionalidad web de reserva de mesas con React.',
     imageSrc: UXUI,
-    link: 'https://github.com/PaulaKDev/react-app'
+    link: 'https://github.com/PaulaKDev/little-lemon'
   },
   {
     title: 'ToDo List App',
     description: 'Aplicación "ToDo" con React',
     imageSrc: Wordpress,
-    link: 'https://github.com/PaulaKDev/react-landing'
+    link: 'https://github.com/PaulaKDev/ToDo-App'
   }
 ];
 
