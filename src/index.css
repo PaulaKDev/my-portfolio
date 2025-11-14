@@ -92,3 +92,36 @@ main {
   justify-content: center; /* centra verticalmente */
   align-items: center;     /* centra horizontalmente */
 }
+
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 100px; /* más arriba del footer */
+  right: 60px;
+  background-color: var(--color-primary); /* marrón principal */
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  z-index: 999;
+  opacity: 0; /* oculto por defecto */
+}
+
+.scroll-to-top.show {
+  opacity: 1; /* visible cuando se activa */
+}
+
+.scroll-to-top:hover {
+  background-color: var(--color-secondary); /* tono más claro */
+  transform: scale(1.1);
+}
+

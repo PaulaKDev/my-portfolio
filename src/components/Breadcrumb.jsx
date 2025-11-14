@@ -20,7 +20,6 @@ const Breadcrumb = () => {
             padding: '0 var(--spacing-unit)',
             display: 'flex',
             alignItems: 'center',
-            padding: '0 var(--spacing-unit)',
             gap: 'var(--spacing-unit)',
         }}>
 
