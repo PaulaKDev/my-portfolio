@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-import PortfolioWordpress from '../images/PortfolioWP.png';
+import PortfolioWordpress from '../images/PortfolioWp.png';
 import UXUI from '../images/UXUI.jpg';
 import Wordpress from '../images/Wordpress.jpg';
 
