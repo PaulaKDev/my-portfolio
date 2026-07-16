@@ -1,16 +1,65 @@
-# React + Vite
+# Paula Miraz — Portfolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio web desarrollado desde cero para presentar mis proyectos y habilidades como Frontend Developer con enfoque en UX/UI.
 
-Currently, two official plugins are available:
+🔗 **Demo en vivo:** https://my-portfolio-nu-ten-yycg9nytyl.vercel.app
+📦 **Repositorio:** https://github.com/PaulaKDev/my-portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Captura del portfolio](../images/my-portfolio-preview.png)
 
-## React Compiler
+## 🎯 Sobre el proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Diseñé y desarrollé este portfolio como una single-page application con navegación por rutas, en lugar de usar un builder visual (como WordPress/Elementor), para tener control total sobre el código y demostrar mis habilidades reales de desarrollo frontend.
 
-## Expanding the ESLint configuration
+[Añade aquí 2-3 líneas propias: por ejemplo, por qué separaste los proyectos en tres páginas distintas (React / UX-UI / WordPress), o qué querías conseguir con la experiencia de usuario del sitio]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Stack técnico
+
+- **React 19** — librería principal de UI
+- **Vite** — bundler y entorno de desarrollo (HMR rápido)
+- **React Router DOM** — navegación entre páginas (Inicio, Proyectos React, Proyectos UX/UI, Proyectos WordPress)
+- **Formik + Yup** — gestión y validación del formulario de contacto
+- **Font Awesome** — iconografía
+- **ESLint** — control de calidad de código
+
+## ✨ Características
+
+- Navegación por rutas independientes según el tipo de proyecto (React, UX/UI, WordPress)
+- Formulario de contacto con validación de campos (Formik + Yup)
+- Diseño responsive
+- Componentes reutilizables (Card, ProjectCard, Breadcrumb, Header, Footer)
+- Scroll automático al cambiar de página (`ScrollToTop`)
+
+## 📂 Estructura del proyecto
+
+```
+src/
+├── components/     # Componentes reutilizables (Header, Footer, Cards, etc.)
+├── context/        # Context API para gestión de alertas/notificaciones
+├── data/           # Datos de proyectos (projects.json)
+├── hooks/          # Custom hooks (useSubmit para el formulario)
+├── pages/          # Páginas por categoría de proyecto
+└── images/         # Recursos visuales
+```
+
+## 🚀 Cómo correrlo en local
+
+```bash
+git clone https://github.com/PaulaKDev/my-portfolio.git
+cd my-portfolio
+npm install
+npm run dev
+```
+
+## 🧠 Decisiones técnicas
+
+[Esta es la sección que más valoran los reclutadores técnicos — elige 1-2 decisiones reales tuyas y explica el porqué. Algunas preguntas para ayudarte a rellenarla:
+- ¿Por qué separaste los proyectos en tres páginas en vez de una sola con filtros?
+- ¿Por qué Formik + Yup para el formulario en vez de manejar el estado a mano?
+- ¿Usaste Context API (`alertContext`) para algo en concreto — notificar el envío del formulario, por ejemplo? ¿Por qué esa solución y no prop drilling?]
+
+## 📬 Contacto
+
+- LinkedIn: [paula-miraz-flores](https://linkedin.com/in/paula-miraz-flores)
+- Email: paulamirazf@gmail.com
+- Web: [paulak.es](https://paulak.es)
