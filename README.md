@@ -5,7 +5,7 @@ Portfolio web desarrollado desde cero para presentar mis proyectos y habilidades
 🔗 **Demo en vivo:** https://my-portfolio-nu-ten-yycg9nytyl.vercel.app
 📦 **Repositorio:** https://github.com/PaulaKDev/my-portfolio
 
-![Captura del portfolio](../images/my-portfolio-preview.png)
+![Captura del portfolio](./screenshot.jpg)
 
 ## 🎯 Sobre el proyecto
 
